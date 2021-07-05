@@ -66,5 +66,7 @@ npm start >> both repos
     </a>
   </p>  
 
+                                                                                                                                          
+<hr/> 
 
 By [Magdalena Lococo](https://github.com/maguilococo) with 🤍

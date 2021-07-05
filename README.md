@@ -1,7 +1,7 @@
 # Client
 
 <a href="https://dogapp.vercel.app/" target="_blank">
-    <img src='https://github.com/myhouseapp/client/blob/main/src/images/circulo2.png?raw=true'  width="140" height="140" />
+    <img src='https://github.com/maguilococo/DogApp_client/blob/master/src/img/logo.svg'  width="140" height="140" />
 </a>
 
 ## Meet the diversity of dogs in the world! 🐶

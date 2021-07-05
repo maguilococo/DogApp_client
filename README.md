@@ -67,4 +67,4 @@ npm start >> both repos
   </p>  
 
 
-By [Magdalena Lococo](https://github.com/maguilococo) with :love:
+By [Magdalena Lococo](https://github.com/maguilococo) with 🤍

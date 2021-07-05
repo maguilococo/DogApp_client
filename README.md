@@ -66,5 +66,5 @@ npm start >> both repos
     </a>
   </p>  
 
-## Contributors :mortar_board: 
+## Contributors :dog: 
 * [Magdalena Lococo](https://github.com/maguilococo)

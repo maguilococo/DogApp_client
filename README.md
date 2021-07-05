@@ -4,8 +4,8 @@
     <img src='https://github.com/myhouseapp/client/blob/main/src/images/circulo2.png?raw=true'  width="140" height="140" />
 </a>
 
-## Find you next home 🏚️
-**[Meet the diversity of dogs in the world!](https://dogapp.vercel.app/)**
+## Meet the diversity of dogs in the world! 🐶
+**[Discover the incredible universe of dogs](https://dogapp.vercel.app/)**
 <p align="center">
     <a href="https://www.youtube.com/watch?v=e-OEwufd3Kc" target="_blank">
         <img align="center" src='https://github.com/maguilococo/maguilococo/blob/main/DogApp/landPage.png'  width="420" height="200" />
@@ -30,7 +30,7 @@ This app was my final project in the Henry Bootcamp, developed with React, Redux
 * [__EC2 of AWS__](https://aws.amazon.com/es/ec2/) >> for the Back-end
 * [__Vercel__](https://vercel.com/dashboard) >> for the Front-end
 
-## Install 🛠️
+## Install 🐾
 --> repository <a href="https://github.com/maguilococo/DogApp_client" target="_blank">client</a> & </a><a href="https://github.com/maguilococo/DogApp-api" target="_blank">server</a>
 ```
 git clone https://github.com/maguilococo/DogApp_client
@@ -41,7 +41,7 @@ npm start >> both repos
 
 
 
-## Previews 🏘️🏚️🏙️
+## Previews 🐕‍🦺🐩🐕
   <p>
     <a href="https://dogapp.vercel.app/" target="_blank">
       <img  align="center" src="https://github.com/maguilococo/maguilococo/blob/main/DogApp/landPage.png" alt="me" width="280 height="140"/>

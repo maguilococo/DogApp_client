@@ -69,4 +69,4 @@ npm start >> both repos
                                                                                                                                           
 <hr/> 
 
-By [Magdalena Lococo](https://github.com/maguilococo) with 🤍
+By [Magui Lococo](https://github.com/maguilococo) with 🤍

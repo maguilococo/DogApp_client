@@ -56,7 +56,7 @@ input:focus {
         padding: 2px 2px;
     }
     .searchBox:hover > .searchText{
-        width: 100px;
+        width: 150px;
         padding: 0 3px;
     }
     .searchIcon{

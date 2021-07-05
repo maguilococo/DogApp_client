@@ -6,6 +6,7 @@ import LandPage  from './components/LandPage';
 import Home from './components/Home';
 import BreedDetail from './components/BreedDetail';
 import AddBreed from './components/AddBreed';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route exact path="/breeds" component={Home} />
         <Route path="/addBreed" component={AddBreed} />
         <Route path="/breeds/:idRaza" component={BreedDetail} />
+        <Footer />
     </React.Fragment>
   );
 }

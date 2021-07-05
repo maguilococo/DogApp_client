@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    align-self: flex-end;
+    padding: 5% 0;
 }
 
 .pagination ul{
@@ -12,7 +13,7 @@
     border-radius: 50px;
     justify-content: space-between;
     align-items: center;
-    width: 70%;
+    width: 40%;
     font-family: 'Lato', sans-serif;
     -webkit-box-shadow: 0px 10px 43px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 10px 43px 0px rgba(0,0,0,0.75);
@@ -40,45 +41,50 @@
     border-radius: 50%;
 }
 
-.pagination ul li.numb.first{
-    margin: 0px 3px 0 -5px;
-}
 
-.pagination ul li.numb.last{
-    margin: 0px -5px 0 3px;
-}
-
-.pagination ul li .dots {
-    font-size: 1rem;
-    cursor: default;
-}
-
-.pagination ul li .btn {
+.next, .prev {
     padding: 0 20px;
     border-radius: 50px;
 }
 
+.forward {
+    display: flex;
+}
+
 .next {
-    border-radius: 5px 25px 25px 5px;
+    margin: 0px 3px 0 -5px;
+    border-radius: 0 25px 25px 0;
     padding: 0 10px;
 }
-
+.last {
+    padding: 13px;
+    margin-right: 0.33em;
+    border-radius: 5px 0px 0px 5px;
+    /* border-radius: 5px 25px 25px 5px; */
+}
+.first {
+    padding: 13px;
+    margin-right: 0.33em;
+    border-radius: 0px 5px 5px 0px;
+    /* border-radius: 25px 5px 5px 25px; */
+}
 .prev {
-    border-radius: 25px 5px 5px 25px;
+    margin: 0px -5px 0 3px;
+    border-radius: 25px 0px 0px 25px;
     padding: 0 10px;
 }
 
 
-.pagination ul li:first-child:hover,
-.pagination ul li:last-child:hover {
+.btn:hover {
     background: #16490D;
     color: whitesmoke;
 }
 
-.pagination ul li .numb:hover, .active {
-    padding: 0 5px;
+.numb:hover, .active {
+    padding: 30% 50%;
     background: #16490D;
     color: whitesmoke;
+    margin: 12%;
 }
 
 
@@ -93,6 +99,21 @@
         display: flex;
         flex-wrap: wrap;
     }
+    .numb:hover, .active {
+        padding: 20% 20%;
+        margin: 0 20px;
+    }
+
+    .last, .first {
+       margin: 0.5em 0;
+       padding: 17px 10px;
+    }
+    .prev {
+        margin: 0px -5px 0 -8px;
+    }
+    .next {
+        margin: 0px -8px 0 -5px;
+    }
 }
 
 
@@ -105,10 +126,15 @@
         border-radius: 20px;
         display: flex;
         flex-wrap: wrap;
+        width: 80%;
+        height: 2.5em;
+        -webkit-box-shadow:  0px 7px 30px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow:  0px 7px 30px 0px rgba(0,0,0,0.5);
+        box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.5);
     }
 
     .pagination ul li {
-        font-size: 0.7rem;
+        font-size: 60%;
         flex-wrap: wrap;
     }
 }

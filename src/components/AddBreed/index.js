@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
+import swal from 'sweetalert';
 import { addBreed } from '../../actions/index'
 import TemperamentTags from '../TemperamentTags';
 import s from './index.module.css';
@@ -103,7 +104,14 @@ function AddBreed({ addBreed, temperaments, tags_temps } ) {
 
  // Function to submit the form
   function handleSubmit (e) {
+    // e.preventDefault();
     addBreed(input);
+    swal({
+      title: "Added new breed!",
+      text: `You just created '${input.name}'`,
+      icon: "success",
+      button: null,
+    });
     resetForm(e)
   }
 

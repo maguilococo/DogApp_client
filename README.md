@@ -66,5 +66,5 @@ npm start >> both repos
     </a>
   </p>  
 
-## Contributors :puppy: 
-* [Magdalena Lococo](https://github.com/maguilococo)
+
+By [Magdalena Lococo](https://github.com/maguilococo) with :love:

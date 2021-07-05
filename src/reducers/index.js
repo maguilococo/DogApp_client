@@ -8,7 +8,7 @@ const initialState = {
     temperaments: [],   // temperaments
     breed_detail: {},   // details from the breed by the id    
     filter_temp: [],    // filter by temperaments tags
-    filters: '',        // filter by dogs from --> api / db / both
+    filters: 'all',        // filter by dogs from --> api / db / both
     orders: '',         // sort option --> al-asc / al-desc / w-asc / w-desc
     tags_temps: []      // temperament tags
 }

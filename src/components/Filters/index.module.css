@@ -62,6 +62,11 @@
     color: whitesmoke;
 }
 
+.active{
+    background: #1C3C17;
+    color: whitesmoke !important;
+}
+
 
 @media only screen and (max-width: 768px) {
 

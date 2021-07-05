@@ -8,7 +8,7 @@
     padding: 10px;
     bottom: 0;
     width: 100%;
-    background-color: #16490D;
+    background-color: #1C3C17;
 }
 
 .ctn {
@@ -38,8 +38,15 @@
 
 .disclaimer{
     display: flex;
+    flex-direction: column;
     color: rgb(245, 245, 245, .7);
-    font-size: 0.9em;
+    font-size: 1em;
+}
+
+.disclaimer a {
+    text-decoration: none;
+    color: rgb(245, 245, 245, .7);
+    font-weight: 600;
 }
 
 @media only screen and (max-width: 768px) {

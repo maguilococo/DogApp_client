@@ -4,8 +4,9 @@ import { filterApi, filterByTemp } from '../../actions/index';
 import TemperamentTags from '../TemperamentTags';
 import SearchBar from '../SearchBar';
 import s from './index.module.css';
+const classNames = require("classnames");
 
-function Filters({ tags_temps, filterApi, filterByTemp }) {
+function Filters({ tags_temps, filterApi, filterByTemp, filters }) {
 
   // Local state to display the temperament bar or hide it
   const [tempBar, setTempBar] = React.useState(false);
@@ -21,21 +22,21 @@ function Filters({ tags_temps, filterApi, filterByTemp }) {
           <div className={s.wrapper}>
             <div className = {s.filtersNav}>
               <div className={s.items} >
-                <span className={s.item} onClick={() =>{
+                <span className={filters === 'all' ? classNames(s.item, s.active) : s.item} onClick={() =>{
                   filterApi('all');
                   setTempBar(false);
                   }}>All</span>
                 
-                <span className={s.item} onClick={(e) =>{
+                <span className={filters === 'api' ? classNames(s.item, s.active) : s.item} onClick={(e) =>{
                   filterApi('api');
                   setTempBar(false);
                   }}>Classics</span>
                 
-                <span className={s.item} onClick={() => {
+                <span className={filters === 'db' ? classNames(s.item, s.active) : s.item} onClick={() => {
                   filterApi('db');
                   setTempBar(false);
                 }}>New</span>              
-                <span className={s.item} onClick={()=>setTempBar(true)}>
+                <span className={tags_temps.length > 0 ? classNames(s.item, s.active) : s.item} onClick={()=>setTempBar(true)}>
                   Temperaments</span>
               </div>
             </div>
@@ -54,7 +55,8 @@ function Filters({ tags_temps, filterApi, filterByTemp }) {
   };
   
   const mapStateToProps = (state) => ({
-    tags_temps: state.tags_temps
+    tags_temps: state.tags_temps,
+    filters: state.filters
   });
   
   function mapDispatchToProps(dispatch) {

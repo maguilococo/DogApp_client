@@ -4,14 +4,19 @@ import { getAllBreeds } from '../../actions/index';
 import DogCard from '../DogCard';
 import Pagination from '../Pagination';
 import s from './index.module.css';
+import load from '../../img/loading.svg'
 
 function Cards({ breeds, filters, filter_temp, getAllBreeds }) {
 
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     // If not breeds fill the global state
-    display().length < 1 && getAllBreeds();
+    if (display().length < 1) {
+      getAllBreeds();
+    } 
   },[]) // eslint-disable-line
+  
 
   /* This function will let us know which array to display
     --> breeds redux state / ---> new array filtered */
@@ -84,12 +89,17 @@ function Cards({ breeds, filters, filter_temp, getAllBreeds }) {
   // Function to move page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
+  useEffect(() => {
+    currentDogs.length > 1 && setLoading(false);
+  },[currentDogs])
+
   // In cards component we display all dog cards passing the necessary information
   // Also, we render the pagination, sending by params the data to change page and display numbers
   return (
       <div className={s.main}>
         <div className={s.gallery}>
-          {display().length < 1? <h2>No breed matches the search</h2>: currentDogs.map(e => (
+          {loading ? <img src={load} alt='spinner' /> :
+           currentDogs.map(e => (
               <DogCard
                 id = {e.id}
                 name = {e.name}
@@ -100,6 +110,7 @@ function Cards({ breeds, filters, filter_temp, getAllBreeds }) {
               />
             ))
         }
+        {(display().length < 1 && !loading) &&  <h2>No breed matches the search</h2>}
         </div>
         <Pagination  
           dogsPerPage = {dogsPerPage}

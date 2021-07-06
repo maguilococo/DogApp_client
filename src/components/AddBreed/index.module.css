@@ -132,6 +132,10 @@
   .container label{
     font-size: 80%;
   }
+  .container .formAdd .formGroup .btnForm{
+    width: 90%;
+    height: 4em;
+  }
 }
 
 @media only screen and (max-width: 430px) {

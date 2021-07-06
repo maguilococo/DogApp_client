@@ -4,7 +4,7 @@ nav {
   padding: 0.5rem 1em;
   z-index: 10;
   justify-content: space-between;
-  margin: 1%;
+  margin: 1% 4%;
   background-color: whitesmoke;
 }
 
@@ -50,6 +50,9 @@ nav {
 
 
 @media screen and (max-width: 768px) {
+  nav {
+    margin: 1%;
+  }
   .menu {
     display: none;
   }

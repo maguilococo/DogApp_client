@@ -1,8 +1,8 @@
-const api_dogs = 'http://18.216.92.193/dogapp_api/dogs';
-const api_dogs_name = 'http://18.216.92.193/dogapp_api/dogs?name=';
-const api_dogs_id = 'http://18.216.92.193/dogapp_api/dogs/';
-const api_dog = 'http://18.216.92.193/dogapp_api/dog';
-const api_temperaments = 'http://18.216.92.193/dogapp_api/temperament';
+const api_dogs = 'http://3.138.109.180:3001/dogs';
+const api_dogs_name = 'http://3.138.109.180:3001/dogs?name=';
+const api_dogs_id = 'http://3.138.109.180:3001/dogs/';
+const api_dog = 'http://3.138.109.180:3001/dog';
+const api_temperaments = 'http://3.138.109.180:3001/temperament';
 
 module.exports = {
     api_dog,
